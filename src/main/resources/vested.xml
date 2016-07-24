@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="vested" namespace="/icorers/ws/irs/data/balance/vested" extends="struts-default">
+        <action name="830/111/111">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_full.json</result>
+        </action>
+        <action name="831/111/111">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_0.json</result>
+        </action>
+        <action name="832/111/111">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_totalVestedBal_only.json</result>
+        </action>
+        <action name="833/111/111">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_totalVestedBal_empty.json</result>
+        </action>
+        <action name="834/111/111">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_totalVestedBal_missed.json</result>
+        </action>
+        <action name="835/111/111">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_totalVestedBal_length20.json</result>
+        </action>
+        <action name="836/111/111">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_totalVestedBal_negative.json</result>
+        </action>
+        <action name="837/111/111">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_empty.json</result>
+        </action>
+        <action name="838/111/111">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_empty2.json</result>
+        </action>
+        <action name="839/111/111">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_totalVestedBal_letters.json</result>
+        </action>
+        <action name="840/111/111">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_totalVestedBal_spec_symbols.json</result>
+        </action>
+        <action name="841/111/111">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_Error301.json</result>
+        </action>
+        <action name="842/111/111">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_Error404.json</result>
+        </action>
+        <action name="843/111/111">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_xml_instead_json.json</result>
+        </action>
+        <action name="845/111/111">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_other_incorrect.json</result>
+        </action>
+    </package>
+</struts>

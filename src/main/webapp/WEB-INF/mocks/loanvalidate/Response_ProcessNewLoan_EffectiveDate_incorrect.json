@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "confNbr": "3938621I660",
+  "desc": "Transaction Description",
+  "effDate": "19uu91",
+  "postDate": "2016-06-28T23:43:18",
+  "prevTrnsStatus": "ACTIVE",
+  "cancelTrans": [
+    {
+      "txType": "123 ",
+      "txDesc": "Transaction Description",
+      "confNbr": "4938621I660",
+      "primary": true,
+      "date": "2011-06-28T23:43:18"
+    },
+    {
+      "txType": "Transaction Type identifier ",
+      "txDesc": "Transaction Description",
+      "confNbr": "6938621I660",
+      "primary": false,
+      "date": "2010-06-28T23:43:18"
+    }
+  ]
+}

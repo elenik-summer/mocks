@@ -1,0 +1,1 @@
+scp target/mocks.war root@10.160.66.30:/opt/tomcat/webapps/mocks.war

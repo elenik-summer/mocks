@@ -1,0 +1,13 @@
+{
+  "hasAchInfo": "true",
+  "achInfo": [
+    {
+      "acctType": "SAVE",
+      "routingNbr": "777",
+      "acctNbr": "1234678901234567890",
+      "lastUpdateDate": "2016-10-10",
+      "achUpdateWaitInDays": "123",
+      "removeFlag": "true"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "hasAchInfo": "true",
+  "achInfo": [
+    {
+      "acctType": "OTHER",
+      "routingNbr": "1abcd2",
+      "acctNbr": "12345",
+      "lastUpdateDate": "2016-10-10",
+      "achUpdateWaitInDays": "123",
+      "removeFlag": "true"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "hasAchInfo": "true",
+  "achInfo": [
+    {
+      "acctType": "SAVE",
+      "acctNbr": "",
+      "lastUpdateDate": "2016-10-10",
+      "achUpdateWaitInDays": "123",
+      "removeFlag": "true"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "success": true,
+
+  "desc": "Transaction Description",
+  "effDate": "2016-06-30T00:00:00",
+  "postDate": "2016-06-30T00:00:00",
+  "prevTrnsStatus": "ACTIVE",
+  "cancelTrans": [
+    {
+      "txType": 123,
+      "txDesc": "Transaction Description",
+      "confNbr": 1111,
+      "primary": true,
+      "date": "2016-06-20T00:00:00"
+    }
+  ]
+}

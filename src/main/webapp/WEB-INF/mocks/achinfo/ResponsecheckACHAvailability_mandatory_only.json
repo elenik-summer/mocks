@@ -1,0 +1,10 @@
+{
+  "hasAchInfo": "true",
+  "achInfo": [
+    {
+      "acctType": "CHECK",
+      "routingNbr": "777",
+      "acctNbr": "1234"
+    }
+  ]
+}

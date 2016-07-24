@@ -1,0 +1,19 @@
+{
+  "withTypeId": 1,
+  "nonTaxAmt": 165.00,
+  "outstandingLoan": "1",
+  "nonTaxDistAmt": 166.00,
+  "defaultLoanAmt": "1",
+  "reqMinDist": "1",
+  "nua": "NUA value",
+  "taxDistAmt": 169.00,
+  "rollAmt": "1",
+  "federalWithhold": "",
+  "stateWithhold": 168.00,
+  "nonTaxRollAmt": "1",
+  "taxAmtEligRoll": "1",
+  "nonTaxAmtEligRoll": "1",
+  "rolloverAllowed": "Y",
+  "isBalInRothSource":true
+
+}

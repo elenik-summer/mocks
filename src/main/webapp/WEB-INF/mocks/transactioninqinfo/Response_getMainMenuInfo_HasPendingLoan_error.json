@@ -1,0 +1,29 @@
+{
+  "isPending": "44tr",
+  "txnHeader": {
+    "effectiveDate": "2015-04-16",
+    "transDate": "2010-02-02",
+    "instance": 14,
+    "transType": "Primary or dependant transaction type",
+    "subTransType": "Sub trans type associated to this transaction",
+    "title": "display title",
+    "desc": "transaction description",
+    "csrId": "User who posted this transaction",
+    "cancelAllowUser": false,
+    "cancelAllowCsr": false,
+    "confirmation": {
+      "number": 123,
+      "affectedStatus": "applicable for share accounting txns",
+      "otherConfirms": [
+        "confirmNbr1",
+        "confirmNbr2"
+      ]
+    },
+    "headers": [
+      {
+        "NAME": "Example:ADVICE_ACCOUNT",
+        "VALUE": 50
+      }
+    ]
+  }
+}

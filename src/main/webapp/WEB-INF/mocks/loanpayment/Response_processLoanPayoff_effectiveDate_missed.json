@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "confNbr": 1234543221,
+  "desc": "Transaction Description",
+
+  "postDate": "timestamp the transaction was posted",
+  "prevTrnsStatus": "CANCELLED",
+  "cancelTrans": [
+    {
+      "txType": "Transaction Type identifier ",
+      "txDesc": "Transaction Description",
+      "confNbr": "Cancelled transaction confirm number",
+      "primary": true,
+      "date": "Timestamp when the transaction is cancelled"
+    },
+    {
+      "txType": "Transaction Type identifier ",
+      "txDesc": "Transaction Description",
+      "confNbr": "Cancelled transaction confirm number",
+      "primary": true,
+      "date": "Timestamp when the transaction is cancelled"
+    }
+  ]
+}

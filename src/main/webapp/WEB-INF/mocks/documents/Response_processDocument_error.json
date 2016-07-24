@@ -1,0 +1,17 @@
+{
+  "success": false,
+  "confNbr": 123456,
+  "desc": "1",
+  "postDate": "1991-01-30",
+  "prevTrnsStatus": "CANCELLED",
+  "cancelTrans": [
+    {
+      "txType": "1",
+      "txDesc": "1",
+      "confNbr": 44,
+      "primary": true,
+      "date": "1991-01-30"
+    }
+
+  ]
+}

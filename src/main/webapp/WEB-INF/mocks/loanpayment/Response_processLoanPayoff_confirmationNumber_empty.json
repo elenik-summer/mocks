@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "confNbr": "",
+  "desc": "Transaction Description",
+  "effDate": "2016-05-05",
+  "postDate": "1991-05-07",
+  "prevTrnsStatus": "ACTIVE",
+  "cancelTrans": [
+    {
+      "txType": "Transaction Type identifier ",
+      "txDesc": "Transaction Description",
+      "confNbr": "",
+      "primary": true,
+      "date": "2016-05-05"
+    },
+    {
+      "txType": "Transaction Type identifier ",
+      "txDesc": "Transaction Description",
+      "confNbr": "",
+      "primary": true,
+      "date": "2016-05-05"
+    }
+  ]
+}

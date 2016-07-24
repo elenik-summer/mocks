@@ -1,0 +1,13 @@
+{
+  "hasAchInfo": "true",
+  "achInfo": [
+    {
+      "acctType": "saave",
+      "routingNbr": "777",
+      "acctNbr": "1234",
+      "lastUpdateDate": "2016-10-10",
+      "achUpdateWaitInDays": "123",
+      "removeFlag": "true"
+    }
+  ]
+}

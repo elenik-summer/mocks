@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="epweb" namespace="/epweb/service" extends="struts-default">
+        <action name="TransactionWithdrawalValidate" class="com.voya.actions.GetClientIdFromBodyAction">
+            <param name="packageName">epweb</param>
+            <param name="actionName">TransactionWithdrawalValidate</param>
+            <result name="default">/WEB-INF/mocks/transactionwithdrawalvalidate/Response_TransactionWithdrawals_full.json</result>
+            <result name="201">/WEB-INF/mocks/transactionwithdrawalvalidate/Response_TransactionWithdrawals_emtpy_ConfNumber.json</result>
+            <result name="ClientID38">/WEB-INF/mocks/transactionwithdrawalvalidate/Response_TransactionWithdrawals_emtpy_ConfNumber.json</result>
+            <result name="203">/WEB-INF/mocks/transactionwithdrawalvalidate/Response_TransactionWithdrawals_emtpy_effDate.json</result>
+            <result name="206">/WEB-INF/mocks/transactionwithdrawalvalidate/Response_TransactionWithdrawals_empty.json</result>
+            <result name="202">/WEB-INF/mocks/transactionwithdrawalvalidate/Response_TransactionWithdrawals_missed_ConfNumber.json</result>
+            <result name="204">/WEB-INF/mocks/transactionwithdrawalvalidate/Response_TransactionWithdrawals_missed_effDate.json</result>
+            <result name="205">/WEB-INF/mocks/transactionwithdrawalvalidate/Response_TransactionWithdrawals_success_false.json</result>
+        </action>
+        <action name="TransactionInqInfo" class="com.voya.actions.GetPlanIdFromQueryAction">
+            <param name="packageName">epweb</param>
+            <param name="actionName">TransactionInqInfo</param>
+            <result name="default">/WEB-INF/mocks/transactioninqinfo/Response_Participant_TransactionInquiry_full.json</result>
+            <result name="isPending_y">/WEB-INF/mocks/transactioninqinfo/Response_Participant_TransactionInquiry_full.json</result>
+            <result name="isPending_n">/WEB-INF/mocks/transactioninqinfo/Response_getMainMenuInfo_HasPendingLoan_N.json</result>
+            <result name="isPending_error">/WEB-INF/mocks/transactioninqinfo/Response_getMainMenuInfo_HasPendingLoan_error.json</result>
+            <result name="isPending_empty">/WEB-INF/mocks/transactioninqinfo/Response_getMainMenuInfo_HasPendingLoan_empty.json</result>
+            <result name="isPending_missed">/WEB-INF/mocks/transactioninqinfo/Response_getMainMenuInfo_HasPendingLoan_missed.json</result>
+        </action>
+        <action name="Transdocuments" class="com.voya.actions.GetPlanIdFromQueryAction">
+            <param name="packageName">epweb</param>
+            <param name="actionName">Transdocuments</param>
+            <result name="default">Response_getAvailableDocuments_AvailableDocumentTypes_full.json</result>
+            <result name="325">/WEB-INF/mocks/transdocuments/Response_getAvailableDocuments_AvailableDocumentTypes_full.json</result>
+            <result name="326">/WEB-INF/mocks/transdocuments/Response_getAvailableDocuments_AvailableDocumentTypes_empty.json</result>
+            <result name="327">/WEB-INF/mocks/transdocuments/Response_getAvailableDocuments_AvailableDocumentTypes_missed.json</result>
+            <result name="328">/WEB-INF/mocks/transdocuments/Response_getAvailableDocuments_AvailableDocumentTypes_spec_symbols.json</result>
+            <result name="329">/WEB-INF/mocks/transdocuments/Response_getAvailableDocuments_AvailableDocumentTypes_not_found.json</result>
+            <result name="330">/WEB-INF/mocks/transdocuments/Response_getAvailableDocuments_empty.json</result>
+            <result name="331">/WEB-INF/mocks/transdocuments/Response_getAvailableDocuments_empty2.json</result>
+            <result name="332">/WEB-INF/mocks/transdocuments/Response_405_Method_Not_Allowed.json</result>
+            <result name="333">/WEB-INF/mocks/transdocuments/Response_206_Partial_Content.json</result>
+            <result name="334">/WEB-INF/mocks/transdocuments/Response_504_Gateway_Timeout.json</result>
+            <result name="335">/WEB-INF/mocks/transdocuments/Response_xml_instead_json.json</result>
+            <result name="336">/WEB-INF/mocks/transdocuments/Response_Incorrect_json.json</result>
+            <result name="FormsAllow_y">/WEB-INF/mocks/transdocuments/Response_getAvailableDocuments_AvailableDocumentTypes_full.json</result>
+            <result name="FormsAllow_n">/WEB-INF/mocks/transdocuments/Response_getAvailableDocuments_empty.json</result>
+            <result name="FormsAllow_error">/WEB-INF/mocks/transdocuments/Response_405_Method_Not_Allowed.json</result>
+            <result name="FormsAllow_empty">/WEB-INF/mocks/transdocuments/Response_getAvailableDocuments_empty2.json</result>
+        </action>
+        <action name="LoanInfo" class="com.voya.actions.GetPartyIdFromQueryAction">
+            <param name="packageName">epweb</param>
+            <param name="actionName">LoanInfo</param>
+            <result name="default">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_issuePrefilledPacket_true_G.json</result>
+            <result name="77">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_issuePrefilledPacket_true_G.json</result>
+            <result name="78">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_issuePrefilledPacket_false_G.json</result>
+            <result name="79">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_issuePrefilledPacket_true_H.json</result>
+            <result name="80">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_minLoanAmount_incorrect_value_G.json</result>
+            <result name="81">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_maxLoanAmount_incorrect_value_G.json</result>
+            <result name="82">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_initialFee_incorrect_value_G.json</result>
+            <result name="83">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_availAmount_incorrect_value_G.json</result>
+            <result name="84">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_loanAnnualFee_incorrect_value_G.json</result>
+            <result name="85">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_interestRate_3digits_G.json</result>
+            <result name="86">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_termMod_incorrect_value_G.json</result>
+            <result name="87">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_LoanRepaymentFreqCount_0_G.json</result>
+            <result name="765">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_LoanRepaymentFreqCount_1_G.json</result>
+            <result name="89">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_LoanRepaymentFreqCount_3_1_G.json</result>
+            <result name="90">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_LoanRepaymentFreqCount_missed_G.json</result>
+            <result name="91">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_minTerm_incorrect_value_G.json</result>
+            <result name="92">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_maxTerm_incorrect_value_G.json</result>
+            <result name="93">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_206_PartialContent.json</result>
+            <result name="94">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_300_MultipleChoices.json</result>
+            <result name="95">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_overniteFeeAmt_incorrect_value_G.json</result>
+            <result name="totalAvailableAmt_20">/WEB-INF/mocks/loaninfo/Response_getMainMenuInfo_totalAvailableAmt_20_digits.json</result>
+            <result name="totalAvailableAmt_negative">/WEB-INF/mocks/loaninfo/Response_getMainMenuInfo_totalAvailableAmt_negative.json</result>
+            <result name="totalAvailableAmt_0">/WEB-INF/mocks/loaninfo/Response_getMainMenuInfo_totalAvailableAmt=0.json</result>
+            <result name="totalAvailableAmt_incorrect">/WEB-INF/mocks/loaninfo/Response_getMainMenuInfo_totalAvailableAmt_incorrect.json</result>
+            <result name="totalAvailableAmt_empty">/WEB-INF/mocks/loaninfo/Response_getMainMenuInfo_HtotalAvailableAmt_empty.json</result>
+            <result name="totalAvailableAmt_missed">/WEB-INF/mocks/loaninfo/Response_getMainMenuInfo_totalAvailableAmt_missed.json</result>
+            <result name="totalAvailableAmt_error402">/WEB-INF/mocks/loaninfo/Response_getMainMenuInfo_totalAvailableAmt_error402.json</result>
+        </action>
+        <action name="WithdrawalInfo" class="com.voya.actions.GetPartyIdFromQueryAction">
+            <param name="packageName">epweb</param>
+            <param name="actionName">WithdrawalInfo</param>
+            <result name="default">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_full.json</result>
+            <result name="a22">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_full.json</result>
+            <result name="a23">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_NumberOfWithdrawalsAvailable_count_0.json</result>
+            <result name="a24">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_NumberOfWithdrawalsAvailable_count_1.json</result>
+            <result name="a25">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_NumberOfWithdrawalsAvailable_count_3.json</result>
+            <result name="a26">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_WithdrawalName_number.json</result>
+            <result name="a27">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_WithdrawalName_empty.json</result>
+            <result name="a28">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_WithdrawalName_missed.json</result>
+            <result name="a29">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_WithdrawalAvailableAmount_correct_amount.json</result>
+            <result name="a30">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_WithdrawalAvailableAmount_negative_amount.json</result>
+            <result name="a31">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_WithdrawalAvailableAmount_fields_empty.json</result>
+            <result name="a32">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_WithdrawalAvailableAmount_fields_missed.json</result>
+            <result name="a33">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_displayRmdWithdrawal_true_and_rmd0401Displayfalse_true.json</result>
+            <result name="a34">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_displayRmdWithdrawal_true_and_rmd1231Display_true.json</result>
+            <result name="a35">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_displayRmdWithdrawal_false.json</result>
+            <result name="a36">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_displayRmdWithdrawal_empty.json</result>
+            <result name="a37">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_displayRmdWithdrawal_missed.json</result>
+            <result name="a38">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_full_is_empty.json</result>
+            <result name="a39">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_206_Partial_Content.json</result>
+            <result name="a40">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_409_Conflict.json</result>
+        </action>
+        <action name="LoanPaymentWs" class="com.voya.actions.GetPartyIdFromQueryAction">
+            <param name="packageName">epweb</param>
+            <param name="actionName">LoanPaymentWs</param>
+            <result name="default">/WEB-INF/mocks/loanpayment/Response_processLoanPayoff_success.json</result>
+            <result name="35a">/WEB-INF/mocks/loanpayment/Response_processLoanPayoff_error.json</result>
+            <result name="36a">/WEB-INF/mocks/loanpayment/Response_processLoanPayoff_confirmationNumber_empty.json</result>
+            <result name="37a">/WEB-INF/mocks/loanpayment/Response_processLoanPayoff_confirmationNumber_missed.json</result>
+            <result name="38a">/WEB-INF/mocks/loanpayment/Response_processLoanPayoff_effectiveDate_incorrectFormat.json</result>
+            <result name="39a">/WEB-INF/mocks/loanpayment/Response_processLoanPayoff_effectiveDate_empty.json</result>
+            <result name="40a">/WEB-INF/mocks/loanpayment/Response_processLoanPayoff_effectiveDate_missed.json</result>
+            <result name="41a">/WEB-INF/mocks/loanpayment/Response_processLoanPayoff_empty_response_1.json</result>
+            <result name="42a">/WEB-INF/mocks/loanpayment/Response_processLoanPayoff_empty_response_2.json</result>
+            <result name="43a">/WEB-INF/mocks/loanpayment/Response_processLoanPayoff_error_401.json</result>
+            <result name="44a">/WEB-INF/mocks/loanpayment/Response_processLoanPayoff_confirmationNumber_letters.json</result>
+        </action>
+        <action name="documents" class="com.voya.actions.GetClientIdFromQueryAction">
+            <param name="packageName">epweb</param>
+            <param name="actionName">documents</param>
+            <result name="default">/WEB-INF/mocks/documents/Response_processDocument_error.json</result>
+            <result name="processDocument_11">/WEB-INF/mocks/documents/Response_processDocument_success.json</result>
+        </action>
+        <action name="TransactionWithdrawalModel" class="com.voya.actions.GetClientIdFromQueryAction">
+            <param name="packageName">epweb</param>
+            <param name="actionName">TransactionWithdrawalModel</param>
+            <result name="default">/WEB-INF/mocks/transactionwithdrawalmodel/Response_ModelWithdrawal_withTypeId_correctAllParameters.json</result>
+            <result name="modelWithdrawal_11">/WEB-INF/mocks/transactionwithdrawalmodel/Response_ModelWithdrawal_withTypeId_correctAllParameters.json</result>
+        </action>
+        <action name="LoanValidateWs" class="com.voya.actions.GetClientIdFromBodyAction">
+            <param name="packageName">epweb</param>
+            <param name="actionName">LoanValidateWs</param>
+            <result name="default">/WEB-INF/mocks/loanvalidate/Response_ProcessNewLoan_Success_201.json</result>
+            <result name="client01">/WEB-INF/mocks/loanvalidate/Response_ProcessNewLoan_declined.json</result>
+            <result name="client02">/WEB-INF/mocks/loanvalidate/Response_ProcessNewLoan_ConfirmationNumber_empty.json</result>
+        </action>
+        <action name="ACHInfo" class="com.voya.actions.GetClientIdFromQueryAction">
+            <param name="packageName">epweb</param>
+            <param name="actionName">ACHInfo</param>
+            <result name="default">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_Success_ACHAccountType_CHECK.json</result>
+            <result name="101">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_Success_ACHAccountType_CHECK.json</result>
+            <result name="102">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountType_OTHER.json</result>
+            <result name="103">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountType_SAVE.json</result>
+            <result name="104">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHRoutingNumber_more256.json</result>
+            <result name="105">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_Success_achInfo_3record.json</result>
+            <result name="106">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_achInfo_empty.json</result>
+            <result name="107">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHRoutingNumber_contains_letters.json</result>
+            <result name="108">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHRoutingNumber_contains_symbols.json</result>
+            <result name="109">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHRoutingNumber_empty.json</result>
+            <result name="110">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHRoutingNumber_missed.json</result>
+            <result name="111">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountNumber_less4.json</result>
+            <result name="112">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountNumber_more17.json</result>
+            <result name="113">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountNumber_more256.json</result>
+            <result name="114">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountNumber_contains_letters.json</result>
+            <result name="115">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountNumber_contains_symbols.json</result>
+            <result name="116">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountNumber_empty.json</result>
+            <result name="117">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountNumber_missed.json</result>
+            <result name="118">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountType_letters.json</result>
+            <result name="119">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountType_more256.json</result>
+            <result name="120">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountType_characters.json</result>
+            <result name="121">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountType_contains_digits.json</result>
+            <result name="122">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountType_empty.json</result>
+            <result name="123">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountType_missed.json</result>
+            <result name="124">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountType_empty_ACHAccountNumber_missed.json</result>
+            <result name="125">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHAccountNumber_empty_ACHRoutingNumber_missed.json</result>
+            <result name="126">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_ACHRoutingNumber_empty_ACHAccountType_missed.json</result>
+            <result name="127">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_xml_instead_json.json</result>
+            <result name="128">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_empty_response.json</result>
+            <result name="129">/WEB-INF/mocks/achinfo/ResponsecheckACHAvailability_mandatory_only.json</result>
+            <result name="130">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_Error_408.json</result>
+            <result name="131">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_Error_500.json</result>
+            <result name="132">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_Success_202.json</result>
+        </action>
+    </package>
+</struts>

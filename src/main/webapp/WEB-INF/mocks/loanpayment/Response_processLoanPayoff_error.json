@@ -1,0 +1,24 @@
+{
+  "success": false,
+  "confNbr": "Transaction confirmation Number",
+  "desc": "Transaction Description",
+  "effDate": "1991-05-06",
+  "postDate": "1991-05-06",
+  "prevTrnsStatus": "CANCELLED",
+  "cancelTrans": [
+    {
+      "txType": "Transaction Type identifier ",
+      "txDesc": "Transaction Description",
+      "confNbr": "123",
+      "primary": true,
+      "date": "1991-05-06"
+    },
+    {
+      "txType": "Transaction Type identifier ",
+      "txDesc": "Transaction Description",
+      "confNbr": "124",
+      "primary": true,
+      "date": "1991-05-06"
+    }
+  ]
+}

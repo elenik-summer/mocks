@@ -1,0 +1,29 @@
+{
+  "hasAchInfo": "true",
+  "achInfo": [
+    {
+      "acctType": "CHECK",
+      "routingNbr": "11",
+      "acctNbr": "11111",
+      "lastUpdateDate": "2016-10-11",
+      "achUpdateWaitInDays": "55",
+      "removeFlag": "true"
+    },
+    {
+      "acctType": "SAVE",
+      "routingNbr": "22",
+      "acctNbr": "22222",
+      "lastUpdateDate": "2016-10-12",
+      "achUpdateWaitInDays": "66",
+      "removeFlag": "true"
+    },
+    {
+      "acctType": "OTHER",
+      "routingNbr": "33",
+      "acctNbr": "33333",
+      "lastUpdateDate": "2016-10-10",
+      "achUpdateWaitInDays": "77",
+      "removeFlag": "true"
+    }
+  ]
+}

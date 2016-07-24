@@ -1,0 +1,17 @@
+{
+  "totalVestedBal": "777usd88",
+  "vestDtls": [
+    {
+      "srcId": "123",
+      "vBal": 1002.77,
+      "srcName": "Source Name 1",
+      "bal": 346177.25
+    },
+    {
+      "srcId": "456",
+      "srcName": "Source Name 2",
+      "bal": 1001.80,
+      "vBal": 1002.00
+    }
+  ]
+}
