@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <package name="balance" extends="struts-default" namespace="/icorers/ws/irs/data/balance">
+        <action name="**">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_full.json</result>
+        </action>
+        <action name="801/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_full.json</result>
+        </action>
+        <action name="802/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_totalBal_only.json</result>
+        </action>
+        <action name="803/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_totalBal_empty.json</result>
+        </action>
+        <action name="804/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_totalBal_missed.json</result>
+        </action>
+        <action name="805/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_totalBal_letters.json</result>
+        </action>
+        <action name="806/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_totalBal_spec_symbols.json</result>
+        </action>
+        <action name="807/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_totalBal_length20.json</result>
+        </action>
+        <action name="808/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_totalBal_negative_balance.json</result>
+        </action>
+        <action name="809/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_AsOfDate_empty.json</result>
+        </action>
+        <action name="810/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_AsOfDate_missed.json</result>
+        </action>
+        <action name="811/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_AsOfDate_incorrect.json</result>
+        </action>
+        <action name="812/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_AsOfDate_spec_symbols.json</result>
+        </action>
+        <action name="813/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_AccountStatus_asOfDate_only.json</result>
+        </action>
+        <action name="814/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_AccountStatus_totalBal_asOfDate_only.json</result>
+        </action>
+        <action name="815/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_empty.json</result>
+        </action>
+        <action name="816/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_empty2.json</result>
+        </action>
+        <action name="817/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_Error400.json</result>
+        </action>
+        <action name="818/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_Error504.json</result>
+        </action>
+        <action name="819/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_xml_instead_json.json</result>
+        </action>
+        <action name="820/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_incorrect_json.json</result>
+        </action>
+        <action name="821/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_202_Accepted.json</result>
+        </action>
+        <action name="822/111/111">
+            <result>/WEB-INF/mocks/balance/Response_GetAccountStatus_TotalBalance_other_incorrect.json</result>
+        </action>
+
+    </package>
+
+</struts>

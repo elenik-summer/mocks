@@ -18,8 +18,9 @@
         </action>
     </package>
 
-    <include file="vested.xml"></include>
-    <include file="epweb.xml"></include>
-    <include file="emvdata.xml"></include>
+    <include file="vested.xml"/>
+    <include file="epweb.xml"/>
+    <include file="emvdata.xml"/>
+    <include file="icorers-balance.xml" />
 
 </struts>
