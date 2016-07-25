@@ -5,6 +5,11 @@
 
 <struts>
     <package name="vested" namespace="/icorers/ws/irs/data/balance/vested" extends="struts-default">
+
+        <action name="**">
+            <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_full.json</result>
+        </action>
+
         <action name="830/111/111">
             <result>/WEB-INF/mocks/balancevested/Response_GetAccountStatus_TotalVestedBalance_full.json</result>
         </action>

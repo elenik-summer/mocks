@@ -9,6 +9,7 @@
     <constant name="struts.i18n.encoding" value="UTF-8"/>
     <constant name="struts.enable.SlashesInActionNames" value="true"/>
     <constant name="struts.mapper.action.prefix.enabled" value="true"/>
+    <!--<constant name="struts.convention.result.path" value="/WEB-INF/mocks"/>-->
 
     <package name="basic-struts2" extends="struts-default" namespace="/">
         <default-action-ref name="index"/>
@@ -19,5 +20,6 @@
 
     <include file="vested.xml"></include>
     <include file="epweb.xml"></include>
+    <include file="emvdata.xml"></include>
 
 </struts>

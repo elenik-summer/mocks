@@ -1,0 +1,6 @@
+{
+  "targetedMessage" : [
+    {
+      "sso_id_type" : "GL",
+      "sso_comm_id" : "34"
+    }

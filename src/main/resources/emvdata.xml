@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="emvdata" namespace="/emvdata/ws/ers/data/customers/targetedMessage" extends="struts-default">
+
+        <action name="**">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_full.json</result>
+        </action>
+
+        <action name="201/123456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_full.json</result>
+        </action>
+        <action name="202/123456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_sso_id_type_empty.json</result>
+        </action>
+        <action name="203/123456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_sso_id_type_missed.json</result>
+        </action>
+        <action name="204/123456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_sso_comm_id_letters.json</result>
+        </action>
+        <action name="205/123456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_sso_comm_id_empty.json</result>
+        </action>
+        <action name="206/123456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_sso_comm_id_missed.json</result>
+        </action>
+        <action name="207/123456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_incorrect_json.json</result>
+        </action>
+        <action name="208/123456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_404_Not_Found.json</result>
+        </action>
+        <action name="209/123456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_205_Reset_Content.json</result>
+        </action>
+        <action name="210/123456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_several_comm_id.json</result>
+        </action>
+        <action name="202/12-3456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_sso_id_type_empty-ani.json</result>
+        </action>
+        <action name="203/12-3456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_sso_id_type_missed-ani.json</result>
+        </action>
+        <action name="204/12-3456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_sso_comm_id_letters-ani.json</result>
+        </action>
+        <action name="205/12-3456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_sso_comm_id_empty-ani.json</result>
+        </action>
+        <action name="206/12-3456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_sso_comm_id_missed-ani.json</result>
+        </action>
+        <action name="210/12-3456789">
+            <result>/WEB-INF/mocks/targetedmessage/Response_ssnLookup_Participant_targetmessage_several_comm_id-ani.json</result>
+        </action>
+    </package>
+</struts>
