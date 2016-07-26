@@ -1,4 +1,4 @@
-package com.voya.actions;
+package org.mocks.actions;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;

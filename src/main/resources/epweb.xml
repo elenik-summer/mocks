@@ -5,7 +5,7 @@
 
 <struts>
     <package name="epweb" namespace="/epweb/service" extends="struts-default">
-        <action name="TransactionWithdrawalValidate" class="com.voya.actions.GetClientIdFromBodyAction">
+        <action name="TransactionWithdrawalValidate" class="org.mocks.actions.GetClientIdFromBodyAction">
             <param name="packageName">epweb</param>
             <param name="actionName">TransactionWithdrawalValidate</param>
             <result name="default">/WEB-INF/mocks/transactionwithdrawalvalidate/Response_TransactionWithdrawals_full.json</result>
@@ -17,7 +17,7 @@
             <result name="204">/WEB-INF/mocks/transactionwithdrawalvalidate/Response_TransactionWithdrawals_missed_effDate.json</result>
             <result name="205">/WEB-INF/mocks/transactionwithdrawalvalidate/Response_TransactionWithdrawals_success_false.json</result>
         </action>
-        <action name="TransactionInqInfo" class="com.voya.actions.GetPlanIdFromQueryAction">
+        <action name="TransactionInqInfo" class="org.mocks.actions.GetPlanIdFromQueryAction">
             <param name="packageName">epweb</param>
             <param name="actionName">TransactionInqInfo</param>
             <result name="default">/WEB-INF/mocks/transactioninqinfo/Response_Participant_TransactionInquiry_full.json</result>
@@ -27,7 +27,7 @@
             <result name="isPending_empty">/WEB-INF/mocks/transactioninqinfo/Response_getMainMenuInfo_HasPendingLoan_empty.json</result>
             <result name="isPending_missed">/WEB-INF/mocks/transactioninqinfo/Response_getMainMenuInfo_HasPendingLoan_missed.json</result>
         </action>
-        <action name="Transdocuments" class="com.voya.actions.GetPlanIdFromQueryAction">
+        <action name="Transdocuments" class="org.mocks.actions.GetPlanIdFromQueryAction">
             <param name="packageName">epweb</param>
             <param name="actionName">Transdocuments</param>
             <result name="default">Response_getAvailableDocuments_AvailableDocumentTypes_full.json</result>
@@ -48,7 +48,7 @@
             <result name="FormsAllow_error">/WEB-INF/mocks/transdocuments/Response_405_Method_Not_Allowed.json</result>
             <result name="FormsAllow_empty">/WEB-INF/mocks/transdocuments/Response_getAvailableDocuments_empty2.json</result>
         </action>
-        <action name="LoanInfo" class="com.voya.actions.GetPartyIdFromQueryAction">
+        <action name="LoanInfo" class="org.mocks.actions.GetPartyIdFromQueryAction">
             <param name="packageName">epweb</param>
             <param name="actionName">LoanInfo</param>
             <result name="default">/WEB-INF/mocks/loaninfo/Response_getNewLoanInformation_issuePrefilledPacket_true_G.json</result>
@@ -79,7 +79,7 @@
             <result name="totalAvailableAmt_missed">/WEB-INF/mocks/loaninfo/Response_getMainMenuInfo_totalAvailableAmt_missed.json</result>
             <result name="totalAvailableAmt_error402">/WEB-INF/mocks/loaninfo/Response_getMainMenuInfo_totalAvailableAmt_error402.json</result>
         </action>
-        <action name="WithdrawalInfo" class="com.voya.actions.GetPartyIdFromQueryAction">
+        <action name="WithdrawalInfo" class="org.mocks.actions.GetPartyIdFromQueryAction">
             <param name="packageName">epweb</param>
             <param name="actionName">WithdrawalInfo</param>
             <result name="default">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_full.json</result>
@@ -103,7 +103,7 @@
             <result name="a39">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_206_Partial_Content.json</result>
             <result name="a40">/WEB-INF/mocks/withdrawalinfo/Response_getWithdrawalBreakdown_409_Conflict.json</result>
         </action>
-        <action name="LoanPaymentWs" class="com.voya.actions.GetPartyIdFromQueryAction">
+        <action name="LoanPaymentWs" class="org.mocks.actions.GetPartyIdFromQueryAction">
             <param name="packageName">epweb</param>
             <param name="actionName">LoanPaymentWs</param>
             <result name="default">/WEB-INF/mocks/loanpayment/Response_processLoanPayoff_success.json</result>
@@ -118,26 +118,26 @@
             <result name="43a">/WEB-INF/mocks/loanpayment/Response_processLoanPayoff_error_401.json</result>
             <result name="44a">/WEB-INF/mocks/loanpayment/Response_processLoanPayoff_confirmationNumber_letters.json</result>
         </action>
-        <action name="documents" class="com.voya.actions.GetClientIdFromQueryAction">
+        <action name="documents" class="org.mocks.actions.GetClientIdFromQueryAction">
             <param name="packageName">epweb</param>
             <param name="actionName">documents</param>
             <result name="default">/WEB-INF/mocks/documents/Response_processDocument_error.json</result>
             <result name="processDocument_11">/WEB-INF/mocks/documents/Response_processDocument_success.json</result>
         </action>
-        <action name="TransactionWithdrawalModel" class="com.voya.actions.GetClientIdFromQueryAction">
+        <action name="TransactionWithdrawalModel" class="org.mocks.actions.GetClientIdFromQueryAction">
             <param name="packageName">epweb</param>
             <param name="actionName">TransactionWithdrawalModel</param>
             <result name="default">/WEB-INF/mocks/transactionwithdrawalmodel/Response_ModelWithdrawal_withTypeId_correctAllParameters.json</result>
             <result name="modelWithdrawal_11">/WEB-INF/mocks/transactionwithdrawalmodel/Response_ModelWithdrawal_withTypeId_correctAllParameters.json</result>
         </action>
-        <action name="LoanValidateWs" class="com.voya.actions.GetClientIdFromBodyAction">
+        <action name="LoanValidateWs" class="org.mocks.actions.GetClientIdFromBodyAction">
             <param name="packageName">epweb</param>
             <param name="actionName">LoanValidateWs</param>
             <result name="default">/WEB-INF/mocks/loanvalidate/Response_ProcessNewLoan_Success_201.json</result>
             <result name="client01">/WEB-INF/mocks/loanvalidate/Response_ProcessNewLoan_declined.json</result>
             <result name="client02">/WEB-INF/mocks/loanvalidate/Response_ProcessNewLoan_ConfirmationNumber_empty.json</result>
         </action>
-        <action name="ACHInfo" class="com.voya.actions.GetClientIdFromQueryAction">
+        <action name="ACHInfo" class="org.mocks.actions.GetClientIdFromQueryAction">
             <param name="packageName">epweb</param>
             <param name="actionName">ACHInfo</param>
             <result name="default">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_Success_ACHAccountType_CHECK.json</result>

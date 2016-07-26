@@ -1,4 +1,4 @@
-package com.voya.actions;
+package org.mocks.actions;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.config.Configuration;

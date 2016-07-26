@@ -1,4 +1,4 @@
-package com.voya.actions;
+package org.mocks.actions;
 
 public class GetPlanIdFromQueryAction extends AbstractAction {
 
