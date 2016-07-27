@@ -1,0 +1,7 @@
+{
+  "result": true,
+  "error": {
+    "type": "BLOCK",
+    "code": "101",
+    "message": null
+}
