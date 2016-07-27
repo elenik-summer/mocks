@@ -174,5 +174,21 @@
             <result name="131">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_Error_500.json</result>
             <result name="132">/WEB-INF/mocks/achinfo/Response_checkACHAvailability_Success_202.json</result>
         </action>
+        <action name="TransactionTransfer"  class="org.mocks.actions.GetClientIdFromBodyAction">
+            <param name="packageName">epweb</param>
+            <param name="actionName">TransactionTransfer</param>
+            <result name="processTransfer_11">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_full.json</result>
+            <result name="processTransfer_12">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_success_warn.json</result>
+            <result name="processTransfer_13">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_success_warn_99.json</result>
+            <result name="processTransfer_14">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_declined.json</result>
+            <result name="processTransfer_15">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_declined_empty_code.json</result>
+            <result name="processTransfer_16">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_confirmationNumber_empty.json</result>
+            <result name="processTransfer_17">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_confirmationNumber_missed.json</result>
+            <result name="processTransfer_18">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_effectiveDate_incorrect.json</result>
+            <result name="processTransfer_19">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_effectiveDate_empty.json</result>
+            <result name="processTransfer_20">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_effectiveDate_missed.json</result>
+            <!--<result name="106">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_warn_99.json</result>-->
+            <!--<result name="106">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_warn_99.json</result>-->
+        </action>
     </package>
 </struts>
