@@ -188,7 +188,7 @@
             <result name="processTransfer_19">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_effectiveDate_empty.json</result>
             <result name="processTransfer_20">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_effectiveDate_missed.json</result>
 			<result name="processTransfer_21">/WEB-INF/mocks/transactiontransfer/Response11_processTransfer_error_declinedReason_empty.json</result>
-            <!--<result name="106">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_warn_99.json</result>-->
+            <result name="106">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_warn_99.json</result>
             <!--<result name="106">/WEB-INF/mocks/transactiontransfer/Response_TransactionTransfer_warn_99.json</result>-->
         </action>
     </package>
